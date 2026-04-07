@@ -28,7 +28,6 @@ This project demonstrates the integration of deep learning-based object detectio
 ## ⚙️ How to Run
 
 **1. Clone the repository**
-
 git clone https://github.com/Saurav0094/Object-Recognition-System.git
 cd Object-Recognition-System
 
