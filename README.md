@@ -1,84 +1,80 @@
-# Real-Time Object Detection System Using YOLOv5 and Flask
+# Object Recognition System
 
-This project is a real-time object detection system that leverages the YOLOv5 model for detecting objects in a video stream from a webcam or other video input. The system is built using a Flask web application to serve the video feed, providing an interactive, real-time experience directly in a browser. YOLOv5's efficiency and speed make it ideal for real-time applications where both performance and accuracy are critical.
+A real-time object detection system built using YOLOv5, Python, OpenCV, and Flask. The system processes live video streams from a webcam and displays detected objects with bounding boxes directly in the browser.
 
+## 🎯 Project Overview
 
-### Features
-- Real-Time Object Detection: Detects and classifies objects in real-time using YOLOv5.
-- Web-Based Interface: Access video feed with detections via a browser-based interface built with HTML and CSS.
-- Responsive UI: An intuitive and modern UI design provides a user-friendly experience.
+This project demonstrates the integration of deep learning-based object detection into a web application. YOLOv5 is used as the core detection model, Flask serves as the backend API, and OpenCV handles real-time video processing.
 
-### How It Works
-- Video Capture: Captures frames from a webcam or other video input.
-- Object Detection: Each frame is passed through the YOLOv5 model to detect objects.
-- Annotation: Detected objects are labeled and bounded in the frames.
-- Streaming to Web Interface: The Flask app streams these annotated frames in real-time to a web page, accessible from any browser.
+## 🚀 Features
 
+- Real-time object detection via webcam
+- Live video streaming to browser using Flask
+- Bounding boxes with class labels and confidence scores
+- Supports 80+ object categories (COCO dataset)
+- Lightweight and fast — processes 30+ FPS
+- Clean and responsive web interface
 
-### Installation
-1. Clone the repository
-   ```sh
-   git clone https://github.com/letsdoitbycode/Objectify-YOLOv5
-   cd Objectify-YOLOv5
-   ```
+## 🛠️ Tech Stack
 
-3. Create a virtual environment and activate it:
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
+| Layer | Technology |
+|---|---|
+| Detection Model | YOLOv5 (PyTorch) |
+| Backend | Python, Flask |
+| Computer Vision | OpenCV |
+| Frontend | HTML, CSS |
+| Version Control | Git, GitHub |
 
-3. Install the required packages:
-   ```sh
-   pip install torch torchvision opencv-python matplotlib
-   pip install requirements.txt   #else you can do this directly
-   ```
+## ⚙️ How to Run
 
-4. Set Up YOLOv5 in the Project:
-   ```sh
-   git clone https://github.com/ultralytics/yolov5
-   cd yolov5
-   pip install -r requirements.txt
-   ```
+**1. Clone the repository**
 
-5. Return to the main project folder:
-   ```sh
-   cd..
-   ```
-   
-6. Run the Flask app:
-    ```sh
-   python app.py
-    ```
+git clone https://github.com/Saurav0094/Object-Recognition-System.git
+cd Object-Recognition-System
 
-### Project Structure
-```plaintext
-Objectify-YOLOv5/
-│
+**2. Install dependencies**
+pip install -r requirements.txt
+
+**3. Run the application**
+python app.py
+
+**4. Open in browser**
+http://localhost:5000
+
+## 📁 Project Structure
+Object-Recognition-System/
+├── app.py              # Main Flask application
+├── requirements.txt    # Python dependencies
 ├── templates/
-│   └── index.html          # HTML file for UI 
+│   └── index.html      # Frontend UI
 ├── static/
-│   └── style.css          # CSS file for styling
-├── venv                    # Virtual environment
-├── yolov5                  # Model YOLOv5 
-├── README.md               # This README file
-├── app.py                  # Main Flask application
-├── yolov5s.pt              # mirror of the YOLOv5 project
-└── requirements.txt        # requirement file
+│   └── style.css       # Styling
+└── images/             # Sample detection images
 
+## 🧠 How It Works
 
-```
+1. Flask backend starts and initializes the YOLOv5 model
+2. OpenCV captures live frames from the webcam
+3. Each frame is passed through YOLOv5 for inference
+4. Detected objects are annotated with bounding boxes and labels
+5. Annotated frames are streamed to the browser in real-time
 
-### Acknowledgements
-- Ultralytics for the YOLOv5 model: YOLOv5 GitHub Repository
-- OpenCV for video processing
-- Flask for powering the web interface
+## 📊 Model Details
 
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
+- **Model:** YOLOv5s (small variant for speed)
+- **Dataset:** COCO (80 object classes)
+- **Input Size:** 640x640
+- **Inference Speed:** 30+ FPS on CPU
 
+## 📌 Future Improvements
 
-## DEMP APPLICATION
-----
+- Add support for custom trained models
+- Implement object tracking across frames
+- Add detection history and analytics dashboard
+- Deploy on cloud (AWS/GCP)
 
-![Screenshot (14)](https://github.com/user-attachments/assets/cf39523f-4e55-4c19-ad66-d1fcce93251c)
+## 👨‍💻 Author
+
+**Saurav Yadav**  
+B.Tech CSE | Kanpur Institute of Technology  
+[GitHub](https://github.com/Saurav0094) | [LinkedIn](https://linkedin.com/in/Saurav)
