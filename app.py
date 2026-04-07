@@ -3,19 +3,20 @@ import cv2
 import torch
 
 # Initialize Flask app
+# Object Recognition System - Saurav Yadav
 app = Flask(__name__)
 
 # Load YOLOv5 model with verification
 try:
     model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
-    print("YOLOv5 model loaded successfully.")
+    print("YOLOv5 model initialized and ready for detection.")
 except Exception as e:
-    print("Error loading YOLOv5 model:", e)
+    print("Failed to load YOLOv5 model. Check internet connection:", e)
 
 # Capture from webcam
 video_capture = cv2.VideoCapture(0)
 if not video_capture.isOpened():
-    print("Error: Could not access webcam.")
+    print("Error: Webcam not found. Please check your camera connection.")
     exit()
 
 def generate_frames():
