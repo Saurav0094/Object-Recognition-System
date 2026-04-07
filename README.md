@@ -1,12 +1,12 @@
-# Object Recognition System
+# 🎯 Object Recognition System
 
 A real-time object detection system built using YOLOv5, Python, OpenCV, and Flask. The system processes live video streams from a webcam and displays detected objects with bounding boxes directly in the browser.
 
-## 🎯 Project Overview
+## 🗂️ Project Overview
 
 This project demonstrates the integration of deep learning-based object detection into a web application. YOLOv5 is used as the core detection model, Flask serves as the backend API, and OpenCV handles real-time video processing.
 
-## 🚀 Features
+## ✨ Features
 
 - Real-time object detection via webcam
 - Live video streaming to browser using Flask
@@ -18,7 +18,7 @@ This project demonstrates the integration of deep learning-based object detectio
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
-|---|---|
+| --- | --- |
 | Detection Model | YOLOv5 (PyTorch) |
 | Backend | Python, Flask |
 | Computer Vision | OpenCV |
@@ -28,27 +28,33 @@ This project demonstrates the integration of deep learning-based object detectio
 ## ⚙️ How to Run
 
 **1. Clone the repository**
+```bash
 git clone https://github.com/Saurav0094/Object-Recognition-System.git
 cd Object-Recognition-System
+```
 
 **2. Install dependencies**
+```bash
 pip install -r requirements.txt
+```
 
 **3. Run the application**
+```bash
 python app.py
+```
 
 **4. Open in browser**
 http://localhost:5000
 
 ## 📁 Project Structure
 Object-Recognition-System/
-├── app.py              # Main Flask application
-├── requirements.txt    # Python dependencies
+├── app.py                  # Main Flask application
+├── requirements.txt        # Python dependencies
 ├── templates/
-│   └── index.html      # Frontend UI
+│   └── index.html          # Frontend UI
 ├── static/
-│   └── style.css       # Styling
-└── images/             # Sample detection images
+│   └── style.css           # Styling
+└── images/                 # Sample detection images
 
 ## 🧠 How It Works
 
@@ -65,15 +71,23 @@ Object-Recognition-System/
 - **Input Size:** 640x640
 - **Inference Speed:** 30+ FPS on CPU
 
-## 📌 Future Improvements
+## 🚀 Future Improvements
 
 - Add support for custom trained models
 - Implement object tracking across frames
 - Add detection history and analytics dashboard
 - Deploy on cloud (AWS/GCP)
 
+## 📸 Screenshots
+
+### 🖥️ Web Interface
+![Web Interface](images/screenshot1.png)
+
+### 🔍 Live Object Detection
+![Live Detection](images/detection.png)
+
 ## 👨‍💻 Author
 
-**Saurav Yadav**  
-B.Tech CSE | Kanpur Institute of Technology  
-[GitHub](https://github.com/Saurav0094) | [LinkedIn](https://www.linkedin.com/in/saurav-yadav-124293228/)
+**Saurav Yadav**
+B.Tech CSE | Kanpur Institute of Technology
+[🐙 GitHub](https://github.com/Saurav0094) | [💼 LinkedIn](https://www.linkedin.com/in/saurav-yadav-124293228/)
