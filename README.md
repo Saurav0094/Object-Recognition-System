@@ -80,11 +80,9 @@ Object-Recognition-System/
 
 ## 📸 Screenshots
 
-### 🖥️ Web Interface
-![Web Interface](images/screenshot1.png)
-
 ### 🔍 Live Object Detection
-![Live Detection](images/detection.png)
+![Live Detection](images/objectify.png)
+
 
 ## 👨‍💻 Author
 
